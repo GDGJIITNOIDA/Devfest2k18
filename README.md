@@ -17,5 +17,6 @@ Wireframes for references are kept in wireframes folder in jpg and eps(eps for e
 2. Logo animation consist of initial SVG loading animation code.
 3. Website reference contain Website code for scroll animation reference 
 4. Main html file in Website Reference is `ind.html`
+5. Reference code for footer is kept in Conf Website folder
 
 
