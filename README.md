@@ -1,9 +1,5 @@
 # Devfest 2k18 Website
 
-### Wireframes
- 
-Wireframes for references are kept in wireframes folder in jpg and eps(eps for editing wireframe or adding section) formats
-
 ### Coding Guidelines
 All the resources are kept in includes folder .
 
@@ -14,6 +10,10 @@ Jquery,Scroll Magic and other necessary libraries are pre added in the initial s
 All Js should be written in style.js in ./includes/js folder .
 
 All Css should be written in style.cs in ./includes/css folder  
+
+### Wireframes
+ 
+Wireframes for references are kept in wireframes folder in jpg and eps(eps for editing wireframe or adding section) formats
 
 #### Code Refrences
 
