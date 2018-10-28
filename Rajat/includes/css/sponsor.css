@@ -104,7 +104,181 @@ a:hover {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0
 }
+.section8 {
+   
+    min-height: 768px;
+    height: 740px
+}
 
+.section8 h2 {
+    margin-top: 40px;
+    color: #9da1a5;
+    text-decoration: underline;
+/*    color: #fff*/
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+/*
+.section8 h5 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 95%
+}
+*/
+
+.section8 .punkt1 {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: 0 auto 0 auto
+}
+
+.section8 .line {
+    top: 180px;
+    width: 2px;
+    background-color: #FFD101;
+    height: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto 0 auto;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1
+}
+
+.section8 .line2 {
+    width: 300px;
+    height: 2px;
+    top: 306px;
+    left: 512px;
+    margin: 0
+}
+
+.section8 .line3 {
+    width: 0px;
+    height: 2px;
+    top: 445px;
+    left: 512px;
+    margin: 0
+}
+
+.section8 .line4 {
+    width: 120px;
+    height: 2px;
+    top: 579px;
+    left: 513px;
+    margin: 0
+}
+
+.section8 .bubbles {
+    position: absolute;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH"
+}
+
+/*rajat*/
+.bbl1{
+    width: 100px;
+    height: 100px;
+    background-color: #3ecee6;
+    left: 110px;
+    top: 255px;
+    border-radius: 50%;
+}
+.bbl2{
+       
+    width: 100px;
+    height: 100px;
+    background-color: #3ecee6;
+    left: 762px;
+    top: 395px;
+    border-radius: 50%;
+}
+
+.bbl3{
+       
+    width: 100px;
+    height: 100px;
+    background-color: #3ecee6;
+    left: 290px;
+    top: 530px;
+    border-radius: 50%;
+}
+
+/*
+.section8 .appstore1,
+.section8 .appstore2,
+.section8 .appstore3 {
+    left: 32px;
+    top: 160px;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0
+}
+*/
+
+.section8 .description1 {
+    position: absolute;
+    width: 100px;
+    top: 287px;
+    left: 110px;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+/*    opacity: 0*/
+    font-size: 3rem;
+    text-align: center;
+}
+
+.section8 .description2 {
+    position: absolute;
+    width: 100px;
+    top: 428px;
+    left: 762px;
+    font-size: 3rem;
+    text-align: center;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0
+}
+
+.section8 .description3 {
+    position: absolute;
+    width: 100px;
+    top: 563px;
+    left: 290px;
+    text-align: center;
+    font-size: 3rem;
+    text-align: center;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0
+}
+
+.section8 .description3 h5 {
+    text-align: center
+}
+
+.section8 .internet1,
+.section8 .internet2,
+.section8 .internet3,
+.section8 .internet4 {
+    left: 722px;
+    top: 160px;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0
+}
+
+/*
+.section8 .e-appstore1,
+.section8 .e-appstore2,
+.section8 .e-appstore3 {
+    left: 222px;
+    top: 478px;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0
+}
+*/
 .section10 {
     min-height: 885px;
     background-color: #333;
