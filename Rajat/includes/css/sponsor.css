@@ -164,7 +164,7 @@ a:hover {
 }
 
 .section8 .line4 {
-    width: 120px;
+    width: 210px;
     height: 2px;
     top: 579px;
     left: 513px;
@@ -205,7 +205,7 @@ a:hover {
     width: 100px;
     height: 100px;
     background-color: #3ecee6;
-    left: 290px;
+    left: 200px;
     top: 530px;
     border-radius: 50%;
 }
@@ -221,6 +221,14 @@ a:hover {
 }
 */
 
+.section8 .prize1 {
+    position: absolute;
+    top: 270px;
+    left: 270px;
+    color: #9da1a5;
+    font-size: 3rem;
+    text-align: center;
+}
 .section8 .description1 {
     position: absolute;
     width: 100px;
@@ -231,7 +239,14 @@ a:hover {
     font-size: 3rem;
     text-align: center;
 }
-
+.section8 .prize2 {
+    position: absolute;
+    top: 410px;
+    left: 562px;
+    color: #9da1a5;
+    font-size: 3rem;
+    text-align: center;
+}
 .section8 .description2 {
     position: absolute;
     width: 100px;
@@ -242,12 +257,20 @@ a:hover {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0
 }
+.section8 .prize3 {
+    position: absolute;
+    top: 543px;
+    left: 320px;
+    color: #9da1a5;
+    font-size: 3rem;
+    text-align: center;
+}
 
 .section8 .description3 {
     position: absolute;
     width: 100px;
     top: 563px;
-    left: 290px;
+    left: 200px;
     text-align: center;
     font-size: 3rem;
     text-align: center;
@@ -433,6 +456,7 @@ a:hover {
 }
 
 .section10 .infobox {
+    font-size: 1.5rem;
     position: absolute;
     top: 655px;
     text-align: center;
