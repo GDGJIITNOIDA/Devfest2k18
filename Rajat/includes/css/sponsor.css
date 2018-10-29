@@ -107,7 +107,7 @@ a:hover {
 .section8 {
    
     min-height: 768px;
-    height: 740px
+    height: 900px
 }
 
 .section8 h2 {
@@ -278,8 +278,26 @@ a:hover {
     opacity: 0
 }
 
+.section8 .other_prizes {
+    position: absolute;
+    top: 650px;
+    left: 550px;
+
+    text-align: left;
+}
+.section8 .other_prizes h5{
+    color: #3ECEE6;
+    font-size: 2.1rem;
+    text-decoration: underline;
+    text-align: left;
+}
+.section8 .description4{
+    color: #9da1a5;
+    font-size: 1.5rem;
+    text-align: left;
+}
 .section8 .description3 h5 {
-    text-align: center
+    text-align: center;
 }
 
 .section8 .internet1,

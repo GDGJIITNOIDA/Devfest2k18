@@ -35,31 +35,52 @@
         <div class="line2 line" style="transform-origin: 0px 50% 0px; transform: matrix(-1, 0, 0, 1, 0, 0);"></div>
         <div class="bubbles bbl1">&nbsp;</div>
 
-        <div class="prize1" style="opacity: 1;">10k + Goodies</div>
-        <div class="description1" style="opacity: 1;">1st</div>
+        <div class="prize1" style="opacity: 0;">10k + Goodies</div>
+        <div class="description1" style="opacity: 0;">1st</div>
 
         <div class="line3 line" style="width: 0px;"></div>
         
         <div class="bubbles bbl2">&nbsp;</div>
 
-       <div class="prize2" style="opacity: 1;">8k + Goodies</div>
-        <div class="description2" style="opacity: 1;">2nd</div>
+       <div class="prize2" style="opacity: 0;">8k + Goodies</div>
+        <div class="description2" style="opacity: 0;">2nd</div>
 
-        <div class="prize3" style="opacity: 1;">5k + Goodies</div>
+        <div class="prize3" style="opacity: 0;">5k + Goodies</div>
         <div class="line4 line" style="transform-origin: 0px 50% 0px; transform: matrix(-1, 0, 0, 1, 0, 0);"></div>
         <div class="bubbles bbl3">&nbsp;</div>
 <!--
         <img src="https://www.flyacts.com/multi-channel-app/images/e-appstore_schritt1.png" class="bubbles e-appstore1" style="width: 175px; opacity: 1;" alt="Enterprise App Store">
         <img src="https://www.flyacts.com/multi-channel-app/images/e-appstore_schritt2.png" class="bubbles e-appstore2" style="width: 175px; opacity: 0.619928;" alt="Enterprise App Store">
 -->
-        <div class="description3" style="opacity: 1;">3rd</div>
+        <div class="description3" style="opacity: 0;">3rd</div>
+        
+        <div class="other_prizes" style="opacity: 0;">
+            <h5>Top 10</h5>
+            <br>
+            <div class="description4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repudiandae dolorem, eveniet adipisci, sint molestiae quasi consectetur numquam ullam.
+            </div>
+            <br>
+            <br>
+            <br>
+            <h5>Free Coupons and Stickers for all</h5>
+            <br>
+            <div class="description4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repudiandae dolorem, eveniet adipisci, sint molestiae quasi consectetur numquam ullam.
+            </div>
+            
+        </div>
+        
     </div>
     <script>
         //vertical line----------------------
         var tween = new TimelineMax()
         //Show line and point
             .add(TweenMax.to(".section8 .punkt1", 0.3, {height:"30px", width: "30px"}))
-            .add(TweenMax.to(".section8 .line1", 1.5, {height:"580px"}))
+            .add(TweenMax.to(".section8 .line1", 1.5, {height:"720px"}))
+//            .add(TweenMax.to(".section8 .prize2", 0.1, {opacity:"1"}))
+//            .add(TweenMax.to(".section8 .prize3", 0.1, {opacity:"1"}))
+        
 
 
         // build scene
@@ -73,11 +94,15 @@
         var tween2 = new TimelineMax()
         //Show line and point
             .add(TweenMax.to(".section8 .line2", 0.4, {scaleX:1, ease: Linear.easeNone, delay:0.4}))
+//            .add(TweenMax.to(".section8 .prize1", 0.1, {opacity:"1"}))
+        
             .add([
 //                TweenMax.to(".section8 .appstore1", 0.9, {css:{opacity:1}, delay:0.2}),
 //                TweenMax.to(".section8 .appstore2", 2, {css:{opacity:1}, repeat:22, yoyo:true}),
 //                TweenMax.to(".section8 .appstore3", 3, {css:{opacity:1}, repeat:16, yoyo:true}),
-                TweenMax.to(".section8 .description1", 1.3, {css:{opacity:1}})
+                TweenMax.to(".section8 .description1", 0.3, {css:{opacity:1}}),
+                TweenMax.to(".section8 .prize1", 0.3, {css:{opacity:1}}),
+                
 
             ])
 
@@ -96,7 +121,9 @@
 //                TweenMax.to(".section8 .internet2", 1.8, {css:{opacity:1}, repeat:18, yoyo:true}),
 //                TweenMax.to(".section8 .internet3", 2, {css:{opacity:1}, repeat:10, yoyo:true}) ,
 //                TweenMax.to(".section8 .internet4", 4, {css:{opacity:1}, repeat:12, yoyo:true}),
-                TweenMax.to(".section8 .description2", 1, {css:{opacity:1}})
+                TweenMax.to(".section8 .description2", 1, {css:{opacity:1}}),
+                TweenMax.to(".section8 .prize2", 0.1, {css:{opacity:1}})
+                
             ])
         // build scene
         var scene = new ScrollScene({triggerElement: "#trigger11", reverse: false})
@@ -111,7 +138,9 @@
             .add([
                 TweenMax.to(".section8 .e-appstore1", 0.8, {css:{opacity:1}, delay:0.2}),
                 TweenMax.to(".section8 .e-appstore2", 2, {css:{opacity:1}, repeat:20, yoyo:true}),
-                TweenMax.to(".section8 .description3", 1, {css:{opacity:1}})
+                TweenMax.to(".section8 .description3", 1, {css:{opacity:1}}),
+                TweenMax.to(".section8 .prize3", 0.1, {css:{opacity:1}}),
+                TweenMax.to(".section8 .other_prizes", 0.5, {css:{opacity:1}})
             ])
 
 
