@@ -33,21 +33,21 @@
         <img src="https://www.flyacts.com/multi-channel-app/images/blau_gross.png" class="centered punkt-gross punkt1" style="width: 30px; height: 30px;" alt="Punkt groß">
         <div class="line1 line" style="height: 0px; width: 2.5px;"></div>
         <div class="line2 line" style="transform-origin: 0px 50% 0px; transform: matrix(-1, 0, 0, 1, 0, 0);"></div>
-        <div class="bubbles bbl1">&nbsp;</div>
+        <div class="bubbles bbl1" style="opacity: 0;">&nbsp;</div>
 
         <div class="prize1" style="opacity: 0;">10k + Goodies</div>
         <div class="description1" style="opacity: 0;">1st</div>
 
         <div class="line3 line" style="width: 0px;"></div>
         
-        <div class="bubbles bbl2">&nbsp;</div>
+        <div class="bubbles bbl2" style="opacity: 0;">&nbsp;</div>
 
        <div class="prize2" style="opacity: 0;">8k + Goodies</div>
         <div class="description2" style="opacity: 0;">2nd</div>
 
         <div class="prize3" style="opacity: 0;">5k + Goodies</div>
         <div class="line4 line" style="transform-origin: 0px 50% 0px; transform: matrix(-1, 0, 0, 1, 0, 0);"></div>
-        <div class="bubbles bbl3">&nbsp;</div>
+        <div class="bubbles bbl3" style="opacity: 0;">&nbsp;</div>
 <!--
         <img src="https://www.flyacts.com/multi-channel-app/images/e-appstore_schritt1.png" class="bubbles e-appstore1" style="width: 175px; opacity: 1;" alt="Enterprise App Store">
         <img src="https://www.flyacts.com/multi-channel-app/images/e-appstore_schritt2.png" class="bubbles e-appstore2" style="width: 175px; opacity: 0.619928;" alt="Enterprise App Store">
@@ -100,6 +100,7 @@
 //                TweenMax.to(".section8 .appstore1", 0.9, {css:{opacity:1}, delay:0.2}),
 //                TweenMax.to(".section8 .appstore2", 2, {css:{opacity:1}, repeat:22, yoyo:true}),
 //                TweenMax.to(".section8 .appstore3", 3, {css:{opacity:1}, repeat:16, yoyo:true}),
+                TweenMax.to(".section8 .bbl1", 0.8, {css:{opacity:1}}),
                 TweenMax.to(".section8 .description1", 0.3, {css:{opacity:1}}),
                 TweenMax.to(".section8 .prize1", 0.3, {css:{opacity:1}}),
                 
@@ -121,6 +122,7 @@
 //                TweenMax.to(".section8 .internet2", 1.8, {css:{opacity:1}, repeat:18, yoyo:true}),
 //                TweenMax.to(".section8 .internet3", 2, {css:{opacity:1}, repeat:10, yoyo:true}) ,
 //                TweenMax.to(".section8 .internet4", 4, {css:{opacity:1}, repeat:12, yoyo:true}),
+                TweenMax.to(".section8 .bbl2", 0.5, {css:{opacity:1}}),
                 TweenMax.to(".section8 .description2", 1, {css:{opacity:1}}),
                 TweenMax.to(".section8 .prize2", 0.1, {css:{opacity:1}})
                 
@@ -136,8 +138,9 @@
         //Show line and point
             .add(TweenMax.to(".section8 .line4", 0.4, {scaleX:1, ease: Linear.easeNone, delay:0.9}))
             .add([
-                TweenMax.to(".section8 .e-appstore1", 0.8, {css:{opacity:1}, delay:0.2}),
-                TweenMax.to(".section8 .e-appstore2", 2, {css:{opacity:1}, repeat:20, yoyo:true}),
+//                TweenMax.to(".section8 .e-appstore1", 0.8, {css:{opacity:1}, delay:0.2}),
+//                TweenMax.to(".section8 .e-appstore2", 2, {css:{opacity:1}, repeat:20, yoyo:true}),
+                TweenMax.to(".section8 .bbl3", 1, {css:{opacity:1}}),
                 TweenMax.to(".section8 .description3", 1, {css:{opacity:1}}),
                 TweenMax.to(".section8 .prize3", 0.1, {css:{opacity:1}}),
                 TweenMax.to(".section8 .other_prizes", 0.5, {css:{opacity:1}})
