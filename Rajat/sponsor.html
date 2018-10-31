@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DSC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="includes/css/style.css">
+
+    <link rel="stylesheet" href="includes/css/sponsor.css">
+    <script src="includes/js/jquery-1.11.0.min.js"></script>
+    <script src="includes/js/jquery.scrollmagic.js"></script>
+    <script src="includes/js/TweenMax.min.js"></script>
+    <script src="includes/js/ScrollToPlugin.min.js"></script>
+    <script src="includes/js/modernizr.custom.min.js"></script>
+    <script src="includes/js/iscroll.js"></script>
+    <script src="includes/js/jquery.scrollmagic.debug.js"></script>
+
+    <script src="includes/js/style.js"></script>
+    <script type="text/javascript">
+        var controller = new ScrollMagic();
+    </script>
+</head>
+
+<body>
+<style>
+    
+    </style>
+<section id="commit1" class="section8">
+    <div id="commit1-content" class="centered content">
+        <div id="trigger11" class="spacer s0"></div>
+        <h2>Cash Prizes</h2>
+        <img src="https://www.flyacts.com/multi-channel-app/images/blau_gross.png" class="centered punkt-gross punkt1" style="width: 30px; height: 30px;" alt="Punkt groß">
+        <div class="line1 line" style="height: 0px; width: 2.5px;"></div>
+        <div class="line2 line" style="transform-origin: 0px 50% 0px; transform: matrix(-1, 0, 0, 1, 0, 0);"></div>
+        <div class="bubbles bbl1" style="opacity: 0;">&nbsp;</div>
+
+        <div class="prize1" style="opacity: 0;">10k + Goodies</div>
+        <div class="description1" style="opacity: 0;">1st</div>
+
+        <div class="line3 line" style="width: 0px;"></div>
+
+        <div class="bubbles bbl2" style="opacity: 0;">&nbsp;</div>
+
+       <div class="prize2" style="opacity: 0;">8k + Goodies</div>
+        <div class="description2" style="opacity: 0;">2nd</div>
+
+        <div class="prize3" style="opacity: 0;">5k + Goodies</div>
+        <div class="line4 line" style="transform-origin: 0px 50% 0px; transform: matrix(-1, 0, 0, 1, 0, 0);"></div>
+        <div class="bubbles bbl3" style="opacity: 0;">&nbsp;</div>
+<!--
+        <img src="https://www.flyacts.com/multi-channel-app/images/e-appstore_schritt1.png" class="bubbles e-appstore1" style="width: 175px; opacity: 1;" alt="Enterprise App Store">
+        <img src="https://www.flyacts.com/multi-channel-app/images/e-appstore_schritt2.png" class="bubbles e-appstore2" style="width: 175px; opacity: 0.619928;" alt="Enterprise App Store">
+-->
+        <div class="description3" style="opacity: 0;">3rd</div>
+
+        <div class="other_prizes" style="opacity: 0;">
+            <h5>Top 10</h5>
+            <br>
+            <div class="description4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repudiandae dolorem, eveniet adipisci, sint molestiae quasi consectetur numquam ullam.
+            </div>
+            <br>
+            <br>
+            <br>
+            <h5>Free Coupons and Stickers for all</h5>
+            <br>
+            <div class="description4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius repudiandae dolorem, eveniet adipisci, sint molestiae quasi consectetur numquam ullam.
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        //vertical line----------------------
+        var tween = new TimelineMax()
+        //Show line and point
+            .add(TweenMax.to(".section8 .punkt1", 0.3, {height:"30px", width: "30px"}))
+            .add(TweenMax.to(".section8 .line1", 1.5, {height:"720px"}))
+//            .add(TweenMax.to(".section8 .prize2", 0.1, {opacity:"1"}))
+//            .add(TweenMax.to(".section8 .prize3", 0.1, {opacity:"1"}))
+
+
+
+        // build scene
+        var scene = new ScrollScene({triggerElement: "#trigger11", reverse: false})
+            .setTween(tween)
+            .addTo(controller);
+
+        //horizontal line App-Store----------------------
+        TweenMax.set(".section8 .line2", {scaleX:0.001, transformOrigin:"0 50%"}); // Android scale line to 0
+        TweenMax.set(".section8 .line4", {scaleX:0.001, transformOrigin:"0 50%"}); // rotate scale line to 0
+        var tween2 = new TimelineMax()
+        //Show line and point
+            .add(TweenMax.to(".section8 .line2", 0.4, {scaleX:1, ease: Linear.easeNone, delay:0.4}))
+//            .add(TweenMax.to(".section8 .prize1", 0.1, {opacity:"1"}))
+
+            .add([
+//                TweenMax.to(".section8 .appstore1", 0.9, {css:{opacity:1}, delay:0.2}),
+//                TweenMax.to(".section8 .appstore2", 2, {css:{opacity:1}, repeat:22, yoyo:true}),
+//                TweenMax.to(".section8 .appstore3", 3, {css:{opacity:1}, repeat:16, yoyo:true}),
+                TweenMax.to(".section8 .bbl1", 0.8, {css:{opacity:1}}),
+                TweenMax.to(".section8 .description1", 0.3, {css:{opacity:1}}),
+                TweenMax.to(".section8 .prize1", 0.3, {css:{opacity:1}}),
+
+
+            ])
+
+        // build scene
+        var scene = new ScrollScene({triggerElement: "#trigger11", reverse: false})
+            .setTween(tween2)
+            .addTo(controller);
+
+
+        //vertical line Internet----------------------
+        var tween3 = new TimelineMax()
+        //Show line and point
+            .add(TweenMax.to(".section8 .line3", 0.4, {width:"250px", ease: Linear.easeNone, delay:0.7}))
+            .add([
+//                TweenMax.to(".section8 .internet1", 0.9, {css:{opacity:1}, delay:0.6}),
+//                TweenMax.to(".section8 .internet2", 1.8, {css:{opacity:1}, repeat:18, yoyo:true}),
+//                TweenMax.to(".section8 .internet3", 2, {css:{opacity:1}, repeat:10, yoyo:true}) ,
+//                TweenMax.to(".section8 .internet4", 4, {css:{opacity:1}, repeat:12, yoyo:true}),
+                TweenMax.to(".section8 .bbl2", 0.5, {css:{opacity:1}}),
+                TweenMax.to(".section8 .description2", 1, {css:{opacity:1}}),
+                TweenMax.to(".section8 .prize2", 0.1, {css:{opacity:1}})
+
+            ])
+        // build scene
+        var scene = new ScrollScene({triggerElement: "#trigger11", reverse: false})
+            .setTween(tween3)
+            .addTo(controller);
+
+
+        //vertical line enterprise appstore----------------------
+        var tween4 = new TimelineMax()
+        //Show line and point
+            .add(TweenMax.to(".section8 .line4", 0.4, {scaleX:1, ease: Linear.easeNone, delay:0.9}))
+            .add([
+//                TweenMax.to(".section8 .e-appstore1", 0.8, {css:{opacity:1}, delay:0.2}),
+//                TweenMax.to(".section8 .e-appstore2", 2, {css:{opacity:1}, repeat:20, yoyo:true}),
+                TweenMax.to(".section8 .bbl3", 1, {css:{opacity:1}}),
+                TweenMax.to(".section8 .description3", 1, {css:{opacity:1}}),
+                TweenMax.to(".section8 .prize3", 0.1, {css:{opacity:1}}),
+                TweenMax.to(".section8 .other_prizes", 0.5, {css:{opacity:1}})
+            ])
+
+
+        // build scene
+        var scene = new ScrollScene({triggerElement: "#trigger11", reverse: false})
+            .setTween(tween4)
+            .addTo(controller);
+
+    </script>
+</section>
+    <section id="success" class="section10">
+        <div id="success-content" class="centered content">
+            <div id="trigger14" class="spacer s0"></div>
+            <h2>Our Sponsors</h2>
+            <img src="https://www.flyacts.com/multi-channel-app/images/grau_gross.png" class="centered punkt-gross punkt1" style="width:0px;" alt="Punkt groß" />
+            <!--Lines-->
+            <div class="line1 line"></div>
+            <div class="line2 line"></div>
+            <div class="line3 line"></div>
+            <div class="line4 line"></div>
+            <div class="line5 line"></div>
+            <div class="line6 line"></div>
+            <div class="line7 line"></div>
+            <img src="https://www.flyacts.com/multi-channel-app/images/grau_gross.png" class="centered punkt-gross punkt2" style="width:0px;" alt="Punkt groß" />
+
+            <!--Pics-->
+            <div class="sponsors">
+                <div class="sponsor-icon">
+                    <img style="position: absolute;" src="includes/images/sponsors/dot-tech-logo.png" class="multi-icons icon1" alt="Stift" />
+                    <img style="position: absolute;" src="includes/images/sponsors/dot-tech-logo-1.png" class="multi-icons icon1 full" alt="Stift" />
+
+                </div>
+
+                <div class="sponsor-icon">
+                    <img style="position: absolute;" src="includes/images/sponsors/hackerearth.png" class="multi-icons icon2" alt="Stift" />
+                    <img style="position: absolute;" src="includes/images/sponsors/hackerearth-1.jpg" class="multi-icons icon2 full" alt="Stift" />
+                </div>
+
+                <div class="sponsor-icon">
+                    <img style="position: absolute;" src="includes/images/sponsors/github.png" class="multi-icons icon3" alt="Stift" />
+                    <img style="position: absolute;" src="includes/images/sponsors/github.png" class="multi-icons icon3 full" alt="Stift" />
+                </div>
+
+                <div class="sponsor-icon">
+                    <img style="position: absolute;" src="includes/images/sponsors/dominos.png" class="multi-icons icon4" alt="Stift" />
+                    <img style="position: absolute;" src="includes/images/sponsors/dominos.png" class="multi-icons icon4 full" alt="Stift" />
+                </div>
+
+<!--
+                <div class="sponsor-icon">
+                    <img style="position: absolute;" src="includes/images/sponsors/dot-tech-logo.png" class="multi-icons icon5" alt="Stift" />
+                    <img style="position: absolute;" src="includes/images/sponsors/dot-tech-logo-1.png" class="multi-icons icon5 full" alt="Stift" />
+
+                </div>
+-->
+
+                <div class="sponsor-icon">
+                    <img style="position: absolute;" src="includes/images/sponsors/hackerearth.png" class="multi-icons icon6" alt="Stift" />
+                    <img style="position: absolute;" src="includes/images/sponsors/hackerearth.png" class="multi-icons icon6 full" alt="Stift" />
+                </div>
+
+                <div class="sponsor-icon">
+                    <img style="position: absolute;" src="includes/images/sponsors/github.png" class="multi-icons icon7" alt="Stift" />
+                    <img style="position: absolute;" src="includes/images/sponsors/github.png" class="multi-icons icon7 full" alt="Stift" />
+                </div>
+
+                <div class="sponsor-icon">
+                    <img style="position: absolute;" src="includes/images/sponsors/dominos.png" class="multi-icons icon8" alt="Stift" />
+                    <img style="position: absolute;" src="includes/images/sponsors/dominos.png" class="multi-icons icon8 full" alt="Stift" />
+                </div>
+
+                <div class="sponsor-icon">
+                    <img style="position: absolute;" src="includes/images/sponsors/godaddy.png" class="multi-icons icon9" alt="Stift" />
+                    <img style="position: absolute;" src="includes/images/sponsors/godaddy.png" class="multi-icons icon9 full" alt="Stift" />
+                </div>
+
+            </div>
+
+            <!--button< for hover action-->
+            <!--
+        <div class="hoverbutton button1"></div>
+        <div class="hoverbutton button2"></div>
+        <div class="hoverbutton button3"></div>
+
+        <div class="hoverbutton button4"></div>
+        <div class="hoverbutton button5"></div>
+        <div class="hoverbutton button6"></div>
+        <div class="hoverbutton button7"></div>
+
+        <div class="hoverbutton button8"></div>
+        <div class="hoverbutton button9"></div>
+        <div class="hoverbutton button10"></div>
+
+        <div class="hoverbutton button11"></div>
+
+        <div class="hoverbutton button12"></div>
+        <div class="hoverbutton button13"></div>
+        <div class="hoverbutton button14"></div>
+        <div class="hoverbutton button15"></div>
+        <div class="hoverbutton button16"></div>
+-->
+
+            <!--Infobox-->
+            <div class="infobox infobox1">All</div>
+            <div class="infobox infobox2">Digital Patners</div>
+            <div class="infobox infobox3">Media Partners</div>
+            <div class="infobox infobox4">Food Partners</div>
+            <div class="infobox infobox5">Other Sponsor </div>
+            <!--Balken-->
+            <div class="blockline"></div>
+
+        </div>
+
+        <script>
+            $(document).ready(function($) {
+                //vertical line ----------------------
+                TweenMax.set(".section10 .line2", {
+                    scaleX: 0.001,
+                    transformOrigin: "0 50%"
+                }); // rotate scale line to 0
+                TweenMax.set(".section10 .line6", {
+                    scaleX: 0.001,
+                    transformOrigin: "0 50%"
+                }); // rotate scale line to 0
+                var tween = new TimelineMax()
+
+                    //Show line and point
+                    .add(TweenMax.to(".section10 .punkt1", 0.3, {
+                        height: "30px",
+                        width: "30px"
+                    }))
+                    .add(TweenMax.to(".section10 .line1", 0.2, {
+                        height: "42px"
+                    }))
+                    .add(TweenMax.to(".section10 .line2", 0.01, {
+                        css: {
+                            opacity: 1
+                        }
+                    }))
+                    .add(TweenMax.to(".section10 .line2", 0.4, {
+                        scaleX: -1,
+                        ease: Linear.easeNone
+                    }))
+                    .add(TweenMax.to(".section10 .line3", 0.5, {
+                        height: "410px",
+                        ease: Linear.easeNone
+                    }))
+                    .add(TweenMax.to(".section10 .line4", 0.8, {
+                        width: "900px",
+                        ease: Linear.easeNone
+                    }))
+                    .add(TweenMax.to(".section10 .line5", 0.1, {
+                        height: "80px"
+                    }))
+                    .add(TweenMax.to(".section10 .line6", 0.01, {
+                        css: {
+                            opacity: 1
+                        }
+                    }))
+                    .add(TweenMax.to(".section10 .line6", 0.4, {
+                        scaleX: -1,
+                        ease: Linear.easeNone
+                    }))
+                    .add(TweenMax.to(".section10 .line7", 0.2, {
+                        height: "435"
+                    }))
+                    .add(TweenMax.to(".section11 .punkt2", 0.1, {
+                        css: {
+                            opacity: 1
+                        }
+                    }))
+                    .add(TweenMax.to(".section11 .description1", 0.01, {
+                        css: {
+                            opacity: 1
+                        }
+                    }))
+                    .add(TweenMax.to(".section11 .punkt3", 0.1, {
+                        css: {
+                            opacity: 1
+                        }
+                    }))
+                    .add(TweenMax.to(".section11 .description2", 0.01, {
+                        css: {
+                            opacity: 1
+                        }
+                    }))
+                    .add(TweenMax.to(".calltoaction", 0.1, {
+                        css: {
+                            opacity: 1
+                        }
+                    }))
+
+
+                // build scene
+                var scene = new ScrollScene({
+                        triggerElement: "#trigger14",
+                        reverse: false
+                    })
+                    .setTween(tween)
+                    .addTo(controller);
+
+                var tween = new TimelineMax()
+
+                    //Show line and point
+                    .add(TweenMax.to(".section11 .punkt2", 0.1, {
+                        css: {
+                            opacity: 1
+                        },
+                        delay: 2.8
+                    }))
+                    .add(TweenMax.to(".section11 .description1", 0.1, {
+                        css: {
+                            opacity: 1
+                        }
+                    }))
+                    .add(TweenMax.to(".section11 .punkt3", 0.1, {
+                        css: {
+                            opacity: 1
+                        }
+                    }))
+                    .add(TweenMax.to(".section11 .description2", 0.1, {
+                        css: {
+                            opacity: 1
+                        }
+                    }))
+                    .add(TweenMax.to(".calltoaction", 0.1, {
+                        css: {
+                            opacity: 1
+                        }
+                    }))
+
+
+                // build scene
+                var scene = new ScrollScene({
+                        triggerElement: "#trigger14",
+                        reverse: false
+                    })
+                    .setTween(tween)
+                    .addTo(controller);
+
+                //            $('.section10 .button1, .section10 .button2, .section10 .button3').bind('click mouseover', function () {
+                //                $('.blockline').animate({left: "80px", width: "88px"}, 'fast');
+                //                $('.section10 .full').animate({opacity: "0"}, 'slow');
+                //                $('.section10 .icon7').animate({opacity: "1"}, 'slow');
+                //                $('.section10 .icon8').animate({opacity: "1"}, 'slow');
+                //                $('.section10 .icon3').animate({opacity: "1"}, 'slow');
+                //            })
+                //
+                //            $('.section10 .button4, .section10 .button5, .section10 .button6').bind('click mouseover', function () {
+                //                $('.blockline').animate({left: "265px", width: "86px"}, 'fast');
+                //                $('.section10 .full').animate({opacity: "0"}, 'slow');
+                //                $('.section10 .icon2').animate({opacity: "1"}, 'slow');
+                //                $('.section10 .icon5').animate({opacity: "1"}, 'slow');
+                //                $('.section10 .icon6').animate({opacity: "1"}, 'slow');
+                //                $('.section10 .icon14').animate({opacity: "1"}, 'slow');
+                //            })
+                //
+                //            $('.section10 .button8, .section10 .button9, .section10 .button10').bind('click mouseover', function () {
+                //                $('.blockline').animate({left: "432px", width: "164px"}, 'fast');
+                //                $('.section10 .full').animate({opacity: "0"}, 'slow');
+                //                $('.section10 .icon4').animate({opacity: "1"}, 'slow');
+                //                $('.section10 .icon12').animate({opacity: "1"}, 'slow');
+                //                $('.section10 .icon16').animate({opacity: "1"}, 'slow');
+                //            })
+                //            $('.section10 .button11').bind('click mouseover', function () {
+                //                $('.blockline').animate({left: "664px", width: "80px"}, 'fast');
+                //                $('.section10 .full').animate({opacity: "0"}, 'slow');
+                //                $('.section10 .icon9').animate({opacity: "1"}, 'slow');
+                //                $('.section10 .icon10').animate({opacity: "1"}, 'slow');
+                //            })
+                //
+                //            $('.section10 .button12,.section10 .button15,.section10 .button13,.section10 .button14,.section10 .button16').bind('click mouseover', function () {
+                //                $('.blockline').animate({left: "803px", width: "140px"}, 'fast');
+                //                $('.section10 .full').animate({opacity: "0"}, 'slow');
+                //                $('.section10 .icon1').animate({opacity: "1"}, 'slow');
+                //                $('.section10 .icon11').animate({opacity: "1"}, 'slow');
+                //                $('.section10 .icon13').animate({opacity: "1"}, 'slow');
+                //                $('.section10 .icon15').animate({opacity: "1"}, 'slow');
+                //            })
+
+                $('.infobox1').bind('click mouseover', function() {
+                    $('.blockline').animate({
+                        left: "80px",
+                        width: "88px"
+                    }, 'fast');
+                    $('.section10 .full').animate({
+                        opacity: "0"
+                    }, 'slow');
+                    $('.section10 .icon1').animate({
+                        opacity: "1"
+                    }, 'slow');
+                    $('.section10 .icon2').animate({
+                        opacity: "1"
+                    }, 'slow');
+                    $('.section10 .icon3').animate({
+                        opacity: "1"
+                    }, 'slow');
+
+
+                })
+                $('.infobox2').bind('click mouseover', function() {
+                    $('.blockline').animate({
+                        left: "265px",
+                        width: "86px"
+                    }, 'fast');
+                    $('.section10 .full').animate({
+                        opacity: "0"
+                    }, 'slow');
+                    $('.section10 .icon1').animate({
+                        opacity: "1"
+                    }, 'slow');
+                    $('.section10 .icon5').animate({
+                        opacity: "1"
+                    }, 'slow');
+                    $('.section10 .icon6').animate({
+                        opacity: "1"
+                    }, 'slow');
+                    $('.section10 .icon14').animate({
+                        opacity: "1"
+                    }, 'slow');
+                })
+                //                    Media Patner
+                $('.infobox3').bind('click mouseover', function() {
+                    $('.blockline').animate({
+                        left: "432px",
+                        width: "164px"
+                    }, 'fast');
+                    $('.section10 .full').animate({
+                        opacity: "0"
+                    }, 'slow');
+                    $('.section10 .icon2').animate({
+                        opacity: "1"
+                    }, 'slow');
+                    $('.section10 .icon12').animate({
+                        opacity: "1"
+                    }, 'slow');
+                    $('.section10 .icon16').animate({
+                        opacity: "1"
+                    }, 'slow');
+                })
+                //                    Food Partner
+                $('.infobox4').bind('click mouseover', function() {
+                    $('.blockline').animate({
+                        left: "664px",
+                        width: "80px"
+                    }, 'fast');
+                    $('.section10 .full').animate({
+                        opacity: "0"
+                    }, 'slow');
+                    $('.section10 .icon4').animate({
+                        opacity: "1"
+                    }, 'slow');
+                    $('.section10 .icon10').animate({
+                        opacity: "1"
+                    }, 'slow');
+                })
+                //                    Design
+                $('.infobox5').bind('click mouseover', function() {
+                    $('.blockline').animate({
+                        left: "803px",
+                        width: "140px"
+                    }, 'fast');
+                    $('.section10 .full').animate({
+                        opacity: "0"
+                    }, 'slow');
+                    $('.section10 .icon1').animate({
+                        opacity: "1"
+                    }, 'slow');
+                    $('.section10 .icon11').animate({
+                        opacity: "1"
+                    }, 'slow');
+                    $('.section10 .icon13').animate({
+                        opacity: "1"
+                    }, 'slow');
+                    $('.section10 .icon15').animate({
+                        opacity: "1"
+                    }, 'slow');
+                })
+
+            })
+        </script>
+    </section>
+
+
+
+</body>
+
+</html>

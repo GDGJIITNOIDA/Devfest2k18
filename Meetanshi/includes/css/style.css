@@ -1,0 +1,262 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+html {
+  font-size: 62.5%
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+      font-size: 56.25%;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .footer-address {
+    font-size: 1rem;      
+  }
+
+  .footer-column3{
+    width: 300px;
+  }
+
+  .footerlink{
+    display: inline;
+  }
+
+  .venue-body {
+    flex-direction: column;
+    
+  }
+
+  .map{
+    max-width:100%;
+  }
+
+  .extra-span {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+      font-size: 50%;
+  }
+  .footer {
+    padding: 0 60px;
+  }
+  .footer-address {
+    font-size: 1.3rem;
+  }
+  
+  .footerlink > ul > li {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+
+  .venue-body {
+    flex-direction: column;
+    padding: 5px 5px;
+  }
+
+  .actual-venue {
+    padding: 3px;
+    font-size: 22px;
+    align-items: flex-start;
+  }
+
+  .extra-span {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+      font-size: 75%
+  }
+  .footer {
+    padding: 0 60px;
+  }
+  .footer-address {
+    font-size: 1rem;
+  }
+  .footerlink > ul > li {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+  .extra-span {
+    font-size: 2.5rem;
+    margin-top : 10px;/*-------------*/
+  }    
+}
+
+body{
+  font-family: "Lato", sans-serif;   
+}
+
+
+/*venue*/
+
+.venue {
+  min-height: 40vh;
+  background-image: url(../images/audi.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.venue-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  min-height: 60vh;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 30px;
+}
+
+.venue-head {
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  position: relative;
+  border-bottom: 2px solid #008bff;
+  margin-bottom: 10px;
+}
+
+.venue-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.actual-venue {
+  font-size: 2.5rem;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.map {
+  height: 450px;
+  width: 620px;
+  background-position: center center;
+  background-position: 620px auto;
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.9), 0 7px 10px rgba(0, 0, 0, 0.1) inset;
+}
+
+/*footer*/
+
+.footer {
+  min-height: 200px;
+  
+  background: #1F1C2C;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 150px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer li {
+  list-style-type: none;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  cursor: pointer;
+}
+
+.border {
+  padding-top: 10px;
+  
+  flex-direction: column;
+  display: block;
+}
+
+
+.footer-column1 {
+  text-align: center;
+  align-content: center;
+  margin: 0 auto;
+}
+.footer-column1-text {
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
+
+.footer-column1-dsctext{
+  transform: translateX(-2.5px);
+}
+
+.footer-column1-dsctext-d{
+  color: #417DF9;
+}
+
+.footer-column1-dsctext-s{
+  color: #FFFFFF;
+}
+
+.footer-column1-dsctext-c{
+  color:#06A95A;
+}
+
+.footer-column2 {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.footer-column2 > ul > li {
+  padding: 3px 0;
+}
+.footer-address {
+  box-sizing: border-box;
+  display: block;
+  padding: 4px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  text-align: center;
+}
+.footer-column3 {
+  align-content: center;
+}
+.footerlink {
+  
+  box-sizing: border-box;
+  padding: 4px;
+  width: 100%;
+  position: relative;
+  align-content: center;
+  text-align: center;
+}
+
+.footerlink > ul > li {
+  
+  font-size: 1.2rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footerlink li{
+  display: inline;
+}
