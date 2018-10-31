@@ -1,6 +1,6 @@
 * {
     font-family: 'Raleway', Arial;
-    color: #fff;
+    color: #222222;
     font-weight: 500
 }
 
@@ -318,7 +318,7 @@ a:hover {
 */
 .section10 {
     min-height: 755px;
-    background-color: #333;
+    background-color: #fff;
     /*transform:translateY(-73%);*/
 }
 
@@ -334,7 +334,7 @@ a:hover {
 }
 
 .section10 .line {
-    background-color: #fff
+    background-color: #37cba2;
 }
 
 .section10 .line1 {
@@ -373,6 +373,7 @@ a:hover {
     margin: 0
 }
 
+/*
 .section10 .line5 {
     width: 2px;
     height: 0px;
@@ -383,7 +384,9 @@ a:hover {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1
 }
+*/
 
+/*
 .section10 .line6 {
     width: 450px;
     height: 2px;
@@ -392,11 +395,12 @@ a:hover {
     top: 653px;
     left: 963px
 }
+*/
 
 .section10 .line7 {
     width: 2px;
     height: 0px;
-    top: 653px;
+    top: 573px;
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1
 }

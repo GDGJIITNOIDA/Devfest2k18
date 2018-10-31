@@ -170,6 +170,7 @@ body{
     animation: fade1 1s ease;
     animation-delay: 7s;
     animation-fill-mode: forwards;
+    transform: translateX(8px);
 }
 .sec-1 .line2 {
     width: 0px;
@@ -295,6 +296,16 @@ body{
 }
 .dot2{
     top: 61rem;
+    opacity: 0;
+    position: absolute;
+    left: 3px;
+    right: 0;
+    margin: 0 auto 0 auto;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+
+}
+.dot3{
+    top: 70rem;
     opacity: 0;
     position: absolute;
     left: 3px;
