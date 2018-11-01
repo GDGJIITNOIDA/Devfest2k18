@@ -230,16 +230,20 @@
   <script type="text/javascript">
       $(document).ready(function($) {
 
+          var tween1 = new TimelineMax()
+              .add(TweenMax.to(".about", 1, {css:{opacity:1}}))
+              .add(TweenMax.to(".timeline", 1, {css:{opacity:1}}))
+              .add(TweenMax.to(".cprize", 1, {css:{opacity:1}}))
+              .add(TweenMax.to(".Keynote", 1, {css:{opacity:1}}))
+              .add(TweenMax.to(".sponser", 1, {css:{opacity:1}}))
 
+          var scene = new ScrollScene({triggerElement: "#trigger1", reverse: false})
+              .setTween(tween1)
+              .addTo(controller);
           TweenMax.set(".section3 .line2", {scaleX: 0.001, transformOrigin: "0 50%"}); // rotate scale line to 0
           var tween = new TimelineMax()
 
           // build Line---------------------------------
-              .add(TweenMax.to(".about", .8, {css:{opacity:1}}))
-              .add(TweenMax.to(".timeline", .8, {css:{opacity:1}}))
-              .add(TweenMax.to(".cprize", .8, {css:{opacity:1}}))
-              .add(TweenMax.to(".Keynote", .8, {css:{opacity:1}}))
-              .add(TweenMax.to(".sponser", .8, {css:{opacity:1}}))
               .add(TweenMax.to(".dot1", .5, {css:{opacity:1}}))
               .add(TweenMax.to(".section3 .line1", 0.2, {height: "25px"}))
               .add(TweenMax.to(".section3 .line2", 0.01, {css:{opacity:1}}))
