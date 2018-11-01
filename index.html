@@ -152,31 +152,80 @@
     <div class="c1 content-row">
       17'th Nov (Day 1)
     </div>
-    <div class="content-row">
+    <div class="content-row cw">
       1:30pm Techtalk (start)
     </div>
-    <div class="content-row">
+    <div class="content-row cw">
       4:30pm Techtalk (end)
     </div>
     <div class="content-row c1">
       18'th Nov (Day 2)
     </div>
-    <div class="content-row">
+    <div class="content-row cw">
       9:00am Hackathon (start)
     </div>
-    <div class="content-row">
+    <div class="content-row cw">
       1:00pm Lunch
     </div>
-    <div class="content-row">
+    <div class="content-row cw">
       2:00pm Hackathon (eval 1)
     </div>
-    <div class="content-row">
+    <div class="content-row cw">
       8:00pm final eval and Results
     </div>
   </div>
 
 </div>
+<div class="cprize">
+  <div class="cprize-header">
+    Hackathon Prizes
+  </div>
+  <div class="cprize-content">
+    <div class="c1 cprize-row">
+      1st Prize 10k cash + Goodies
+    </div>
+    <div class="c1 cprize-row">
+      2nd Prize 8k cash + Goodies
+    </div>
+    <div class="c1 cprize-row">
+      3rd Prize 5k cash + Goodies
+    </div>
+    <div class="cprize-row">
+      Cash Prize 3k for Special Mention and Top Girls Team
+    </div>
+    <div class="cprize-row">
+      Stickers and coupons for all
+    </div>
+  </div>
 
+</div>
+<div class="Keynote">
+  <div class="Keynote-header">
+    Keynote Speakers
+  </div>
+  <div class="Keynote-content">
+    <img src="./includes/images/Coming%20Soon.png" class="cm-image">
+  </div>
+</div>
+<div class="sponser">
+  <div class="sponser-header">
+    Our Sponsers
+  </div>
+  <div class="sponser-content">
+    <div class="sponser-row">
+      <img src="./includes/images/jetbrains.svg" class="sp-image1">
+    </div>
+    <div class="sponser-row">
+      <img src="./includes/images/logoc81e.png" class="sp-image">
+    </div>
+    <div class="sponser-row">
+      <img src="./includes/images/J&F_Projects_India.png" class="sp-image1">
+    </div>
+    <div class="sponser-row">
+      <img src="./includes/images/HE_logo.png" class="sp-image">
+    </div>
+  </div>
+</div>
 <section id="why" class="section3">
   <script type="text/javascript">
       $(document).ready(function($) {
@@ -187,7 +236,10 @@
 
           // build Line---------------------------------
               .add(TweenMax.to(".about", .8, {css:{opacity:1}}))
-              .add(TweenMax.to(".timeline", .5, {css:{opacity:1}}))
+              .add(TweenMax.to(".timeline", .8, {css:{opacity:1}}))
+              .add(TweenMax.to(".cprize", .8, {css:{opacity:1}}))
+              .add(TweenMax.to(".Keynote", .8, {css:{opacity:1}}))
+              .add(TweenMax.to(".sponser", .8, {css:{opacity:1}}))
               .add(TweenMax.to(".dot1", .5, {css:{opacity:1}}))
               .add(TweenMax.to(".section3 .line1", 0.2, {height: "25px"}))
               .add(TweenMax.to(".section3 .line2", 0.01, {css:{opacity:1}}))

@@ -501,7 +501,8 @@ a.bttn:hover {
     }
     .footer {
         padding: 0 60px;
-    }
+
+}
     .footer-address {
         font-size: 1rem;
     }
@@ -513,6 +514,7 @@ a.bttn:hover {
         font-size: 2.5rem;
         margin-top : 10px;/*-------------*/
     }
+
 }
 /*venue*/
 
@@ -1053,6 +1055,12 @@ a.bttn:hover {
         margin:0;
         height: 100vh;
     }
+    .register{
+        display: none;
+    }
+    .footer{
+        transform: translateY(0%);
+    }
 }
 /*----------------------------ADDING SECTION-------------------------------*/
 @media only screen and (min-width: 1000px) {
@@ -1060,6 +1068,12 @@ a.bttn:hover {
         display: none;
     }
     .cprize{
+        display: none;
+    }
+    .Keynote{
+        display: none;
+    }
+    .sponser{
         display: none;
     }
 
@@ -1074,7 +1088,6 @@ a.bttn:hover {
         padding-bottom: 3.3rem;
         width: 100vw;
         opacity: 0;
-        /*background-color: #3ECFE6;*/
     }
     .timeline-header{
         display: flex;
@@ -1082,7 +1095,7 @@ a.bttn:hover {
         align-items: center;
         height: 25%;
         font-size: 3rem;
-        color: gray;
+        color: black;
         font-weight: lighter;
         letter-spacing: 2px;
     }
@@ -1101,8 +1114,121 @@ a.bttn:hover {
         font-weight: lighter;
         color: #FD5857;
     }
+
+    .cprize{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        height: 45rem;
+        /*padding-bottom: 3.3rem;*/
+        width: 100vw;
+        opacity: 0;
+        background-color: #3ECFE6;
+    }
+    .cprize-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25%;
+        font-size: 3.5rem;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 2px;
+    }
+    .cprize-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+        height: 75%;
+    }
+    .cprize-row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.9rem;
+        font-weight: lighter;
+        color: white;
+    }
+    .Keynote{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        height: 30rem;
+        padding-bottom: 3.3rem;
+        width: 100vw;
+        opacity: 0;
+        background-color: #B2E04C;
+
+    }
+    .cm-image{
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .Keynote-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+        font-size: 3.5rem;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 2px;
+    }
+    .Keynote-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+        height: 70%;
+    }
     .c1{
         font-size: 2.2rem;
     }
-
+    .cw{
+        color: black;
+    }
+    .sponser{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        height: 60rem;
+        padding-bottom: 3.3rem;
+        width: 100vw;
+        opacity: 0;
+    }
+    .sponser-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+        font-size: 3.5rem;
+        color: black;
+        font-weight: lighter;
+        letter-spacing: 2px;
+    }
+    .sponser-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+        height: 90%;
+    }
+    .sponser-row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sp-image{
+        height: 5rem;
+        width: auto;
+    }
+    .sp-image1{
+        height: 12rem;
+        width: auto;
+    }
 }
