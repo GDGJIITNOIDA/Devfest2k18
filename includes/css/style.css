@@ -1049,6 +1049,9 @@ a.bttn:hover {
     .section8{
         display: none;
     }
+    .keynote{
+        display: none;   
+    }
     .section10{
         display: none;
     }

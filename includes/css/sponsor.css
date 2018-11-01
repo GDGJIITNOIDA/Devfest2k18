@@ -94,6 +94,30 @@ a:hover {
     filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0
 }
+.keynote{
+
+    min-height: 550px;
+    height: 600px;
+    margin-top: 5rem;
+    /*transform:translateY(-61%);*/
+/*    background-color: #B2E04C;*/
+
+}
+.keynote h2{
+ text-decoration: underline;
+    color: #6a6a6a;
+    font-size: 3rem;
+}
+.keynote .coming_soon{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+     width: 100%;   
+}
+.keynote .coming_soon img{
+     width: 50%;
+    height: 60%;
+}
 .section8 {
 
     min-height: 768px;
