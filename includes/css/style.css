@@ -14,7 +14,6 @@ html {
 
 body{
     font-family: "Lato", sans-serif;
-
 }
 
 @keyframes fade1 {
@@ -88,6 +87,13 @@ body{
     font-weight: lighter;
     color: gray;
 }
+.ntext{
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    /*border: solid ;*/
+    font-weight: lighter;
+    color: gray;
+}
 /*---------------------------------------NAV-----------------------------------------*/
 .Header{
     display: flex;
@@ -118,6 +124,9 @@ body{
     animation-delay: 4s;
     opacity: 0;
     animation-fill-mode: forwards;
+}
+.rtext{
+    text-decoration: none;
 }
 .register-btn{
     display: flex;
@@ -170,6 +179,7 @@ body{
     animation: fade1 1s ease;
     animation-delay: 7s;
     animation-fill-mode: forwards;
+    transform: translateX(8px);
 }
 .sec-1 .line2 {
     width: 0px;
@@ -295,6 +305,16 @@ body{
 }
 .dot2{
     top: 61rem;
+    opacity: 0;
+    position: absolute;
+    left: 3px;
+    right: 0;
+    margin: 0 auto 0 auto;
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+
+}
+.dot3{
+    top: 70rem;
     opacity: 0;
     position: absolute;
     left: 3px;
@@ -569,6 +589,7 @@ a.bttn:hover {
 .map {
     height: 30rem;
     width: 50rem;
+    background-image: url(../images/jiitmap.png);
     background-position: center center;
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.9), 0 7px 10px rgba(0, 0, 0, 0.1) inset;
 }
@@ -625,11 +646,11 @@ a.bttn:hover {
 }
 
 .footer-column1-dsctext-d{
-    color: #417DF9;
+    color: white;
 }
 
 .footer-column1-dsctext-s{
-    color: #FFFFFF;
+    color: yellow;
 }
 
 .footer-column1-dsctext-c{
@@ -678,7 +699,8 @@ a.bttn:hover {
 
 .section5 {
     background-color: #000000;
-    height: 65rem
+    height: 65rem;
+    color:white;
 }
 
 .section5 h2 {
@@ -1037,6 +1059,9 @@ a.bttn:hover {
     }
     .section8{
         display: none;
+    }
+    .keynote{
+        display: none;   
     }
     .section10{
         display: none;
